@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import AddCategory from "./Components/addCategory/AddCategory";
 
 const GifExpertApp = () => {
@@ -19,12 +19,12 @@ const GifExpertApp = () => {
     <>
       <main>
         <h1>GifExpertApp</h1>
-        <AddCategory />
+        <AddCategory setCategories={setCategories} />
         <hr />
 
         <ul>
-          {categories.map((category) => {
-            return <li key={category}>{category}</li>;
+          {categories.map((category, id) => {
+            return <li key={id}>{category}</li>;
           })}
         </ul>
       </main>
@@ -32,6 +32,6 @@ const GifExpertApp = () => {
   );
 };
 
-GifExpertApp.propTypes = {};
+// GifExpertApp.propTypes = {};
 
 export default GifExpertApp;
