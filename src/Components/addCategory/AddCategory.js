@@ -2,22 +2,20 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 const AddCategory = ({ setCategories }) => {
-  const [inputValid, setInputValid] = useState("");
-
-  const handleInputValid = (e) => {
-    setInputValid(e.target.value);
+  const [inputValue, setInputValue] = useState("");
+  const handleInputValue = (e) => {
+    setInputValue(e.target.value);
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (inputValid.trim().length > 2) {
-      setCategories((category) => [...category, inputValid]);
+    if (inputValue.trim().length > 3) {
+      setCategories((category) => [...category, inputValue]);
+      setInputValue("");
     }
   };
-
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" value={inputValid} onChange={handleInputValid} />
+      <input type="text" value={inputValue} onChange={handleInputValue} />
     </form>
   );
 };
