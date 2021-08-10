@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pruebas en GifExpertApp debe mostrar <GifExpertApp /> de manera correcta 1`] = `
+<Fragment>
+  <h1
+    className="animate__animated animate__fadeIn"
+  >
+    Gif Expert App
+  </h1>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ul>
+    <GifGrid
+      category=""
+      key=""
+    />
+  </ul>
+</Fragment>
+`;

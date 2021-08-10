@@ -8,7 +8,7 @@ const getGifs = async (category) => {
     return {
       id: gif.id,
       title: gif.title,
-      url: gif.images?.downsized.url,
+      url: gif.images?.fixed_height_small.url,
     };
   });
   return gifs;
