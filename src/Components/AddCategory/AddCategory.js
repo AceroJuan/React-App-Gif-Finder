@@ -6,7 +6,6 @@ const AddCategory = ({ setCategories }) => {
 
   const handleInput = (e) => {
     setInputValue(e.target.value);
-    console.log("handleInput");
   };
 
   const handleSubmit = (e) => {

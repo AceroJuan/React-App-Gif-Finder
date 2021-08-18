@@ -3,8 +3,8 @@ import AddCategory from "../AddCategory/AddCategory";
 import GifGrid from "../GifGrid/GifGrid";
 import "animate.css";
 
-const GifExpertApp = () => {
-  const [categories, setCategories] = useState([""]);
+const GifExpertApp = ({ defaultCategories = [] }) => {
+  const [categories, setCategories] = useState(defaultCategories);
 
   return (
     <>
