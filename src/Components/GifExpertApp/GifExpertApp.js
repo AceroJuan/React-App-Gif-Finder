@@ -8,7 +8,7 @@ const GifExpertApp = ({ defaultCategories = [] }) => {
 
   return (
     <>
-      <h1 className="animate__animated animate__fadeIn">Gif Expert App</h1>
+      <h1 className="animate__animated animate__fadeIn">Hola</h1>
       <AddCategory setCategories={setCategories} />
       <hr />
       <ul>
